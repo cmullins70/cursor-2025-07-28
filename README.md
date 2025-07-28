@@ -10,7 +10,7 @@ Want to attend? Sign up [here](https://lu.ma/event/manage/evt-ypHzMQN1hjS46FG).
 ### Product Requirements Document (PRD)
 
 ### Tech Stack
-
+-------------
 ### Architectural Decision Records (ADR)
 
 ### Folder Structure Map
