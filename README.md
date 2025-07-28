@@ -12,3 +12,13 @@ Want to attend? Sign up [here](https://lu.ma/event/manage/evt-ypHzMQN1hjS46FG).
 ### Tech Stack
 
 ### Architectural Decision Records (ADR)
+
+### Folder Structure Map
+
+### Data Schema
+
+### API Reference
+
+### Component Library Guide 
+
+### Roadmap
