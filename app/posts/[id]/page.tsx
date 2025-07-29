@@ -9,13 +9,13 @@ import { ArrowLeft, Heart, Eye, MessageSquare, Send, ChevronDown, ChevronRight }
 import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-// // import ReactPlayer from 'react-player';
-// import { ThreadPost, Comment, Profile } from '@/types';
-// import { 
-//   ThreadPostContentSkeleton, 
-//   CommentsSkeleton, 
-//   LoadingSpinner 
-// } from '@/components/common/loading-skeletons';
+// import ReactPlayer from 'react-player'; // TODO: Fix prop compatibility
+import { ThreadPost, Comment, Profile } from '@/types';
+import { 
+  ThreadPostContentSkeleton, 
+  CommentsSkeleton, 
+  LoadingSpinner 
+} from '@/components/common/loading-skeletons';
 
 // Mock data
 const mockAuthors: Record<string, Profile> = {
@@ -438,9 +438,12 @@ Check out the [official documentation](https://nextjs.org/docs) for more details
                   <div key={index} className="rounded-lg overflow-hidden bg-muted">
                     <div className="bg-muted p-8 text-center rounded-lg">
                       <p className="text-muted-foreground">Video embed: {url}</p>
+                      <p className="text-xs text-muted-foreground mt-2">ReactPlayer temporarily disabled</p>
                     </div>
                   </div>
-                ))}            )}
+                ))}
+              </div>
+            )}
 
             {/* ThreadPost Stats */}
             <div className="flex items-center space-x-6 text-sm text-muted-foreground pt-4 border-t">
