@@ -1,39 +1,36 @@
-# Cursor-2025-07-28
-Working Repo For Houston Cursor User Group Meeting
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Want to attend? Sign up [here](https://lu.ma/event/manage/evt-ypHzMQN1hjS46FG).
+## Getting Started
 
-## Agenda
-1. Project Setup
-2. Build our own Cursor Houston Forum: Threaducate
-3. Workflow multipliers
-   3.1 Chat Tabs
-   3.2 Custom AI Modes
-   3.3 Instant diff reviews
-   3.4 One-click tool integrate
-4. Total Project Awareness
-  4.1 @folders awareness
-  4.2 Memories in action
-  4.3 Deep Project Structure Awareness
-  4.4 Prompt Engineering
-  4.5 Pull from Chat History
-   
--------------
+First, run the development server:
 
-## Before You Paint, Tape.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-### Product Requirements Document (PRD)
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Tech Stack
--------------
-### Architectural Decision Records (ADR)
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-### Folder Structure Map
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-### Data Schema
+## Learn More
 
-### API Reference
+To learn more about Next.js, take a look at the following resources:
 
-### Component Library Guide 
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-### Roadmap
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
