@@ -78,7 +78,7 @@ export default function PostsPage() {
       if (savedPosts) {
         const parsedPosts = JSON.parse(savedPosts);
         // Add author info to saved posts
-        const postsWithAuthors = parsedPosts.map((post: any) => ({
+        const postsWithAuthors = parsedPosts.map((post: { id: string; title: string; content: string; view_count?: number; like_count?: number; comment_count?: number; created_at: string }) => ({
           ...post,
           author: mockAuthors.current_user,
           view_count: post.view_count || 0,

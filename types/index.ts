@@ -10,6 +10,23 @@ export interface Profile {
   updated_at: string;
 }
 
+// Comment types
+export interface Comment {
+  id: string;
+  post_id: string;
+  user_id: string;
+  parent_id?: string;
+  content: string;
+  markdown_content?: string;
+  like_count: number;
+  created_at: string;
+  updated_at: string;
+  // Relations
+  author?: Profile;
+  replies?: Comment[];
+  is_liked?: boolean;
+}
+
 // ThreadPost types
 export interface ThreadPost {
   id: string;
@@ -28,4 +45,20 @@ export interface ThreadPost {
   author?: Profile;
   comments?: Comment[];
   is_liked?: boolean;
-} 
+}
+
+// Form types
+export interface CreateThreadPostInput {
+  title: string;
+  content: string;
+  embed_urls?: string[];
+}
+
+export interface CreateCommentInput {
+  content: string;
+  parent_id?: string;
+}
+
+// Legacy aliases
+export interface Post extends ThreadPost {}
+export interface CreatePostInput extends CreateThreadPostInput {}

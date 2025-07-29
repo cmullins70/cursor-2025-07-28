@@ -46,7 +46,7 @@ export default function NewPostPage() {
 
       // Success feedback before redirect
       router.push('/posts');
-    } catch (error) {
+    } catch {
       // Handle error state
       setIsSubmitting(false);
     }

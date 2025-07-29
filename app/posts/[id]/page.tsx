@@ -9,13 +9,13 @@ import { ArrowLeft, Heart, Eye, MessageSquare, Send, ChevronDown, ChevronRight }
 import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import ReactPlayer from 'react-player';
-import { ThreadPost, Comment, Profile } from '@/types';
-import { 
-  ThreadPostContentSkeleton, 
-  CommentsSkeleton, 
-  LoadingSpinner 
-} from '@/components/common/loading-skeletons';
+// // import ReactPlayer from 'react-player';
+// import { ThreadPost, Comment, Profile } from '@/types';
+// import { 
+//   ThreadPostContentSkeleton, 
+//   CommentsSkeleton, 
+//   LoadingSpinner 
+// } from '@/components/common/loading-skeletons';
 
 // Mock data
 const mockAuthors: Record<string, Profile> = {
@@ -186,7 +186,7 @@ export default function PostPage() {
 
       if (savedPosts) {
         const posts = JSON.parse(savedPosts);
-        foundPost = posts.find((p: any) => p.id === params.id);
+        foundPost = posts.find((p: { id: string }) => p.id === params.id);
         if (foundPost) {
           foundPost.author = mockAuthors.current_user;
         }
@@ -436,16 +436,11 @@ Check out the [official documentation](https://nextjs.org/docs) for more details
               <div className="space-y-4 mb-6">
                 {post.embed_urls.map((url, index) => (
                   <div key={index} className="rounded-lg overflow-hidden bg-muted">
-                    <ReactPlayer
-                      url={url}
-                      width="100%"
-                      height="400px"
-                      controls
-                    />
+                    <div className="bg-muted p-8 text-center rounded-lg">
+                      <p className="text-muted-foreground">Video embed: {url}</p>
+                    </div>
                   </div>
-                ))}
-              </div>
-            )}
+                ))}            )}
 
             {/* ThreadPost Stats */}
             <div className="flex items-center space-x-6 text-sm text-muted-foreground pt-4 border-t">
