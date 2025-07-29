@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../../Cursor-Meetup/Meetups/Meetup 3 2025-07-28 (Virtual)/threaducate-starter/app"
+		},
+		{
+			"path": "../../../../Cursor-Meetup/Meetups/Meetup 3 2025-07-28 (Virtual)/threaducate-starter/components"
+		},
+		{
+			"path": "../../../../Cursor-Meetup/Meetups/Meetup 3 2025-07-28 (Virtual)/threaducate-starter/lib"
+		},
+		{
+			"path": "../../../../Cursor-Meetup/Meetups/Meetup 3 2025-07-28 (Virtual)/threaducate-starter/pages"
+		},
+		{
+			"path": "../../../../Cursor-Meetup/Meetups/Meetup 3 2025-07-28 (Virtual)/threaducate-starter/styles"
+		},
+		{
+			"path": "../../../../Cursor-Meetup/Meetups/Meetup 3 2025-07-28 (Virtual)/threaducate-starter/types"
+		}
+	],
+	"settings": {}
+}
