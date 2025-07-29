@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { ThemeToggle } from '@/components/theme-toggle';
-import { MessageSquare, BookOpen, TrendingUp, Users } from 'lucide-react';
+import { MessageSquare, BookOpen, TrendingUp } from 'lucide-react';
 import Link from 'next/link';
 
 export default function HomePage() {

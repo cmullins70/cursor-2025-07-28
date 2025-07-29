@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ThemeToggle } from '@/components/theme-toggle';
-import { BookOpen, Heart, Eye, Plus, Video, FileText, Code } from 'lucide-react';
+import { Heart, Eye, Plus } from 'lucide-react';
 import Link from 'next/link';
 import { ListItemSkeleton } from '@/components/common/loading-skeletons';
 
@@ -35,21 +35,9 @@ const mockLists = [
   },
 ];
 
-const getResourceIcon = (type: string) => {
-  switch (type) {
-    case 'video':
-      return <Video className="h-4 w-4" />;
-    case 'article':
-      return <FileText className="h-4 w-4" />;
-    case 'code':
-      return <Code className="h-4 w-4" />;
-    default:
-      return <BookOpen className="h-4 w-4" />;
-  }
-};
 
 export default function ListsPage() {
-  const [lists, setLists] = useState<any[]>([]);
+  const [lists, setLists] = useState<typeof mockLists>([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
